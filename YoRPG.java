@@ -1,7 +1,7 @@
-// Justin Strauss
-// pd#8
-// HW24
-// 2013-11-13
+//Justin Strauss
+//HW26
+//pd08
+//2013-11-15
 
 /*=============================================
   class YoRPG -- Driver file for Ye Olde Role Playing Game.

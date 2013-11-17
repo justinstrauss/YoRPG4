@@ -1,49 +1,62 @@
-// Justin Strauss
-// pd#8
-// HW25
-// 2013-11-14
+//Noah Brook
+//HW26
+//pd08
+//2013-11-15
 
 public abstract class Character {
 
-    protected String _name;
-    protected int _health;
-    protected int _strength;
-    protected int _defense;
-    protected double _attack;
-    // these instance vars need to be protected so they can be acessed by
-    // the subclasses without being public
+    //instance variables
+    protected int health, strength, defense;
+    protected double attackRate, dodge;
+    protected String name;
 
     public boolean isAlive() {
-	return (_health > 0);
+	return health > 0;
     }
-
-    public String getName() {
-	return _name;
-    }
-
+    //accessor methods
     public int getDefense() {
-	return _defense;
+	return defense;
+    }
+    
+    public String getName() {
+	return name;
+    }
+
+    public double getDodge() {
+	return dodge;
     }
 
     public void lowerHP(int damage) {
-	_health -= damage;
+	health -= damage;
     }
 
-    public int attack(Character name) {
-	int damage = (int) (_strength * _attack) - name.getDefense();
+    public int attack(Character Opponent) {
+	int damage = (int) (strength * attackRate) - Opponent.getDefense();
 	if (damage < 0) {
 	    damage = 0;
 	}
-	name.lowerHP( damage );
+	else if (Math.random() <= Opponent.dodge) {
+	    System.out.println("Attack dodged!");
+	    
+	}
+	else {
+	    Opponent.lowerHP(damage);
+	    System.out.println("Direct hit!");
+    
+	}
 	return damage;
+       
     }
 
+    //specialize prepares for special attack lowering defense and increasing attack                                             
+    public abstract void specialize();
+    
+    //normalize prepares warrior for normal attack, reseting defense and attackRate                                                 
     public abstract void normalize();
 
-    public abstract void specialize();
+    //about gives a brief explanation of each character
+    public abstract String about();
 
-    public static String about() {
-	return "These are subclasses of superclass Character.";
-    }
+    public abstract void sacrifice();
 
-}
+}//end class Character

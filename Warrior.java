@@ -1,28 +1,37 @@
-// Justin Strauss
-// pd#8
-// HW25
-// 2013-11-14
+//Noah Brook
+//HW26
+//pd08
+//2013-11-15
 
-public class Warrior extends Character {
-
-    public void normalize() {
-        _defense = 100;
-        _attack = .4;
+public class Warrior extends Character{
+    
+    //default constructor
+    public Warrior(String newName) {
+	super();
+	name = newName;
+	health = 125;
+	strength = 100;
+	defense = 40;
+	attackRate = 0.5;
+	dodge = Math.random() * 50;
     }
-
+       
+    //specialize prepares for special attack lowering defense and increasing attack                                             
     public void specialize() {
-        _defense = 20;
-        _attack = .75;
+        defense = 35;
+        attackRate = 0.8;
+    }
+    //normalize prepares warrior for normal attack, reseting defense and attackRate                                                                                                                                                       
+    public void normalize() {
+        defense = 45;
+        attackRate = 0.4;
     }
 
-    // a class that exends an abstract class must override all inherited 
-    // abstract methods
-
-    public Warrior(String name) {
-	_health = 125;
-        _strength = 40;
-	_defense = 100;
-        _attack = 0.4;
+    public String about() {
+	String retStr = "The Warrior is a brave soldier of the battle of evil, /n known for his fierce attacks and swinging                                   broadsword./n If I were a smeagel, I wouldn't mess with him.";
+	return retStr;
     }
+	    
+    public void sacrifice() {}    
 
-}
+}//end class Warrior
