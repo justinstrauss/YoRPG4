@@ -19,8 +19,8 @@ public class Archer extends Character {
     // archers can't specialize or normailze
 
     public String about() {
-	String retStr = "An archer is only equipped with bow and arrow, ";
-	retStr += "leaving him with a low attack rate, but nonetheless, he is ";        retStr += "able to defend himself with ease.";
+	String retStr = "An archer is only equipped with bow and arrow, \n";
+	retStr += "leaving him with a low attack rate, but nonetheless, he \n";         retStr += "is able to defend himself with ease. \n";
 	return retStr;
     }
 
