@@ -1,0 +1,16 @@
+Ye Olde Role Playing Game, Unchained
+by Noah Brook, Marc Katz, and Justin Strauss (Brownlandia and the Hoopy Froods)
+
+Our RPG Consists of:
+- a Character superclass
+- 5 hero subclasses of Character (Warrior, Archer, Mage, Ninja, and Tank)
+- 2 dreaded-unnamed-assailant subclass of Character (Monster and Ogre)
+- a YoRPG driver class
+
+New Things We’ve Implemented:
+- dodge is a new instance variable
+- regenerate is a new abstract method
+- getDodge is a new non-abstract method to coincide with the instance variable
+
+Enjoy the game!
+
