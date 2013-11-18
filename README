@@ -9,7 +9,7 @@ Our RPG Consists of:
 
 New Things We’ve Implemented:
 - dodge is a new instance variable
-- regenerate is a new abstract method
+- sacrifice is a new abstract method
 - getDodge is a new non-abstract method to coincide with the instance variable
 
 Enjoy the game!
