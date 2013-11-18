@@ -20,7 +20,8 @@ public class Archer extends Character {
 
     public String about() {
 	String retStr = "An archer is only equipped with bow and arrow, \n";
-	retStr += "leaving him with a low attack rate, but nonetheless, he \n";         retStr += "is able to defend himself with ease. \n";
+	retStr += "leaving him with a low attack rate, but nonetheless, he \n";
+	retStr += "is able to defend himself with ease. \n";
 	return retStr;
     }
 

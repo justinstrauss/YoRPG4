@@ -26,7 +26,7 @@ public class Mage extends Character {
     }
 
     public String about() {
-	String retStr = "The mage is and sagacious fellow capable of weilding magic and spells./n                                                             Through his life he has trained giving him a high health and defense rating. /n                                                      But heed my warning. Time has taken its toll and made the Mage's attack weak.";
+	String retStr = "The mage is and sagacious fellow capable of weilding magic and spells.\nThrough his life he has trained giving him a high health and defense rating. \nBut heed my warning. Time has taken its toll and made the Mage's attack weak.";
 	return retStr;
     }
 

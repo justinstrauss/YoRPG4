@@ -9,9 +9,9 @@ public class Ninja extends Character{
     public Ninja(String n){
 	super();
 	name = n;
-	health = 75;
+	health = 90;
 	strength = 75;
-	defense = 30;
+	defense = 35;
 	attackRate = 0.7;
 	dodge = 0.5;
     }
@@ -36,7 +36,7 @@ public class Ninja extends Character{
     }
 
     public String about(){
-	String retStr = " The ninja is feirce fighter. He is strong, silent, and deadly./n It take more luck than skill to hit it, as it constantly darts around, appearing where you least expect it./n However, one strong punch can knock it out, if it hasn't done the same to you yet";
+	String retStr = " The ninja is feirce fighter. He is strong, silent, and deadly. \nIt take more luck than skill to hit it, as it constantly darts around, appearing where you least expect it. \nHowever, one strong punch can knock it out, if it hasn't done the same to you yet";
 	return retStr;
     }
 

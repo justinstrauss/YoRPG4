@@ -1,4 +1,4 @@
-//Noah Brook
+//Justin Strauss
 //HW26
 //pd08
 //2013-11-15
@@ -28,7 +28,7 @@ public class Warrior extends Character{
     }
 
     public String about() {
-	String retStr = "The Warrior is a brave soldier of the battle of evil, /n known for his fierce attacks and swinging                                   broadsword./n If I were a smeagel, I wouldn't mess with him.";
+	String retStr = "The Warrior is a brave soldier of the battle of evil, \nknown for his fierce attacks and swinging broadsword. \nIf I were a monster, I wouldn't mess with him.";
 	return retStr;
     }
 	    

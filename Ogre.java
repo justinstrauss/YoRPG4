@@ -7,12 +7,12 @@ public class Ogre extends Character {
 
     public Ogre() {
 	super();
-	health = 130;
-	defense = 25;
+	health = 170;
+	defense = 40;
 	attackRate = 0.85;
 	strength = 25 +( (int) (Math.random() * 45));
 	name = "Ogre";
-	dodge = 0.25;
+	dodge = 0.01;
     }
 
     public void specialize() {
@@ -25,7 +25,7 @@ public class Ogre extends Character {
     }
 
     public String about() {
-	String retStr = "Ogres are huge beasts that can tear a human a part./n                                                                                You best be prepared for a fight when meeting this creature./n                                                                       Don't forget to attack fast, for his strength be mighty but his agility not.";
+	String retStr = "Ogres are huge beasts that can tear a human a part.\nYou best be prepared for a fight when meeting this creature.\nDon't forget to attack fast, for his strength be mighty but his agility not.";
 	return retStr;
     }
 

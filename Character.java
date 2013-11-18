@@ -31,12 +31,13 @@ public abstract class Character {
     }
 
     public int attack(Character Opponent) {
-	int damage = (int) (strength * attackRate) - Opponent.getDefense();
+	int damage = (int) (strength * (attackRate + 1)) - Opponent.getDefense();
 	if (damage < 0) {
 	    damage = 0;
 	}
-	else if (Math.random() <= Opponent.dodge) {
+	else if (Math.random() <= Opponent.getDodge() ) {
 	    System.out.println("Attack dodged!");
+	    damage = 0;
 	    
 	}
 	else {
